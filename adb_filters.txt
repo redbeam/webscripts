@@ -7,6 +7,7 @@
 
 @@||dsl.sk/images/ads/ad_kvety.gif
 @@||dsl.sk##td.header_info_text
+
 ||coin-hive.com/lib/coinhive.min.js
 ||i.ebayimg.com/00/s/MTAwWDk3OA==/z/IqkAAOSw99FdA1mA/$_57.JPG
 ##span#ct_70unrF
@@ -17,3 +18,6 @@
 ##div.mn-related-container
 ##div#abm
 ##div#old-browser-alert
+
+! IS
+##div.prispevek.is_maly_tip
