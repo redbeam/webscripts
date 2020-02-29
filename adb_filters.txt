@@ -1,7 +1,10 @@
 [Adblock Plus 2.0]
-! Title: Matus ABP List
 ! Version: 1
-! Expires: 2 days
+! Title: Matus ABP List
+! Last modified:
+! Expires: 2 days (update frequency)
+! Homepage:
+!
 
 ! "." - class , "#" - id , "##" - cely tag
 
