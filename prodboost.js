@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
 // @namespace    http://tampermonkey.net/
-// @version      1
+// @version      2
 // @description  Hides suggested videos on YouTube
 // @author       Matus
 // @match        *://www.youtube.com/*
