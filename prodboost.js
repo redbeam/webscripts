@@ -11,7 +11,7 @@
 console.log("Starting YouTube Productivity Booster");
 
 function hideOdporucane() {
-    var odporucane = document.getElementsByClassName("section-list")[0] || document.getElementById("watch7-sidebar-modules");
+    var odporucane = document.getElementsByClassName("yt-card clearfix")[0] || document.getElementById("watch7-sidebar-modules");
     var odporucaneOrig = odporucane.innerHTML;
 
     odporucane.innerHTML = "<a id=\"odporucaneUnhide\">Odporúčané videá skryté; Kliknite pre odkrytie</a>";
