@@ -8,10 +8,9 @@
 ! https://help.eyeo.com/en/adblockplus/how-to-write-filters#elemhide_basic
 ! "." - class; "#" - id
 !
+i.ebayimg.com/00/s/MTAwWDk3OA==/z/IqkAAOSw99FdA1mA/$_57.JPG
 @@dsl.sk/images/ads/ad_kvety.gif
 dsl.sk#@#.header_info_text
-||i.ebayimg.com/00/s/MTAwWDk3OA==/z/IqkAAOSw99FdA1mA/$_57.JPG
-!
 ##span#ct_70unrF
 ##div.icobannercontainer
 ##article#headerad-pro
