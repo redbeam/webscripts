@@ -11,11 +11,11 @@
 i.ebayimg.com/00/s/MTAwWDk3OA==/z/IqkAAOSw99FdA1mA/$_57.JPG
 @@dsl.sk/images/ads/ad_kvety.gif
 dsl.sk#@#.header_info_text
+facebook.com###pagelet_ego_pane
 ##span#ct_70unrF
 ##div.icobannercontainer
 ##article#headerad-pro
 ##div.frbanner
-##div.ego_section
 ##div.mn-related-container
 ##div#abm
 youtube.com##div#old-browser-alert
