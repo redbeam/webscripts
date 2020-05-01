@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
 // @namespace    http://tampermonkey.net/
-// @version      2
+// @version      3
 // @description  Hides suggested videos on YouTube
 // @author       Matus
 // @match        *://www.youtube.com/*
 // @grant        unsafeWindow
+// @run-at       document-start
 // ==/UserScript==
 
 console.log("Starting YouTube Productivity Booster");
