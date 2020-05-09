@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
-// @version      3
+// @version      4
 // @description  Hides suggested videos on YouTube's front page and video pages
 // @author       Matus
 // @match        *://www.youtube.com/*
