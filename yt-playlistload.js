@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube Playlist Loader
-// @version      2
+// @version      3
 // @description  Automatically loads whole playlists on YouTube
 // @author       Matus
 // @match        *://www.youtube.com/*
