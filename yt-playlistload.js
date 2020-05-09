@@ -19,15 +19,6 @@
             } catch (err) {
                 clearInterval(interval);
                 window.scrollTo(0, document.body.scrollHeight);
-
-                /* skusal som opravit posuvanie videi - dali sa posuvat, ale server to neregistroval; od 12.10.2019 uz funkcne
-                var plist_array = document.getElementsByClassName("pl-video yt-uix-tile");
-                for (let i = 0; i < plist_array.length; i++) {
-                    plist_array[i].className = "pl-video yt-uix-tile yt-uix-dragdrop-draggable-item";
-                    plist_array[i].children[0].className = "pl-video-handle yt-uix-dragdrop-drag-handle";
-                    plist_array[i].children[0].innerHTML = "<span class=\"pl-video-handle-img yt-sprite\"></span>";
-                }
-                */
             }
         }
     }, 500);
