@@ -13,7 +13,9 @@ i.ebayimg.com/00/s/MTAwWDk3OA==/z/IqkAAOSw99FdA1mA/$_57.JPG
 dsl.sk#@#.header_info_text
 facebook.com###pagelet_ego_pane
 facebook.com###pagelet_gaming_destination_rhc
+! tieto dve su na to iste, ale to prve sa mi nepaci
 coinmarketcap.com##.cmc-platform-alert__content
+coinmarketcap.com##.dIgMry
 !
 ! tieto neviem na co sa vztahuju
 ##span#ct_70unrF
