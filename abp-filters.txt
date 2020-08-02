@@ -15,7 +15,7 @@ facebook.com###pagelet_ego_pane
 facebook.com###pagelet_gaming_destination_rhc
 ! tieto dve su na to iste, ale to prve sa mi nepaci
 coinmarketcap.com##.cmc-platform-alert__content
-coinmarketcap.com##.dIgMry
+coinmarketcap.com##.sc-2366s6-0
 !
 ! tieto neviem na co sa vztahuju
 ##span#ct_70unrF
