@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
-// @version      4
+// @version      5
 // @description  Hides suggested videos on YouTube's front page and video pages
 // @author       Matus
 // @match        *://www.youtube.com/*
@@ -8,29 +8,34 @@
 // @run-at       document-start
 // ==/UserScript==
 
-console.log("Starting YouTube Productivity Booster");
+function hideHome() {
+    let home = document.getElementById("primary");
 
-function hideOdporucane() {
-    var odporucane = document.getElementsByClassName("yt-card clearfix")[0] || document.getElementById("watch7-sidebar-modules");
-    var odporucaneOrig = odporucane.innerHTML;
+    home.style = "display: none";
 
-    odporucane.innerHTML = "<a id=\"odporucaneUnhide\">Odporúčané videá skryté; Kliknite pre odkrytie</a>";
-
-    document.getElementById("odporucaneUnhide").addEventListener("click", function() {
-        odporucane.innerHTML = odporucaneOrig;
+    document.getElementById("buttons").addEventListener("click", function() {
+        home.style = "";
     });
 }
 
-setTimeout(function() { // first start
-    if (document.location.pathname == "/" || document.location.pathname == "/watch") {
-        hideOdporucane();
-    }
-}, 1000);
+function hideVideos() {
+    let panel = document.getElementById("watch7-sidebar-contents");
+    let panelOrig = panel.innerHTML;
 
-unsafeWindow.addEventListener("spfdone", function() { // after navigation
-    setTimeout(function() {
-        if (document.location.pathname == "/" || document.location.pathname == "/watch") {
-            hideOdporucane();
-        }
-    }, 1000);
+    panel.innerHTML = "<a id='panelUnhide'>Odporúčané videá skryté; Kliknite pre odkrytie</a>";
+
+    document.getElementById("panelUnhide").addEventListener("click", function() {
+        panel.innerHTML = panelOrig;
+    });
+}
+
+console.log("Starting YouTube Productivity Booster");
+
+// old listener: "spfdone"
+unsafeWindow.addEventListener("DOMContentLoaded", function() {
+    if (document.location.pathname == "/") {
+        hideHome();
+    } else if (document.location.pathname.includes("/watch")) {
+        hideVideos();
+    }
 });
