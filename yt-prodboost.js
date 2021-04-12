@@ -8,9 +8,14 @@
 // @run-at       document-start
 // ==/UserScript==
 
-function hideHome() {
-    let home = document.getElementById("primary");
+"use strict";
 
+function hideHome() {
+    if (document.location.pathname != "/") {
+        return;
+    }
+
+    let home = document.getElementById("primary");
     home.style = "display: none";
 
     document.getElementById("buttons").addEventListener("click", function() {
@@ -18,24 +23,21 @@ function hideHome() {
     });
 }
 
-function hideVideos() {
-    let panel = document.getElementById("watch7-sidebar-contents");
-    let panelOrig = panel.innerHTML;
+function hideRelated() {
+    if ( !document.location.pathname.includes("/watch")) {
+        return;
+    }
 
-    panel.innerHTML = "<a id='panelUnhide'>Odporúčané videá skryté; Kliknite pre odkrytie</a>";
+    let panel = document.getElementById("related");
+    panel.style = "display: none";
 
-    document.getElementById("panelUnhide").addEventListener("click", function() {
-        panel.innerHTML = panelOrig;
+    document.getElementById("buttons").addEventListener("click", function() {
+        panel.style = "";
     });
 }
 
-console.log("Starting YouTube Productivity Booster");
-
-// old listener: "spfdone"
 unsafeWindow.addEventListener("DOMContentLoaded", function() {
-    if (document.location.pathname == "/") {
-        hideHome();
-    } else if (document.location.pathname.includes("/watch")) {
-        hideVideos();
-    }
+    hideHome();
+    //hideRelated();
 });
+console.log("Started YouTube Productivity Booster");
