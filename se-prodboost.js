@@ -14,6 +14,8 @@
 // @grant        none
 // ==/UserScript==
 
+"use strict";
+
 var hot = document.getElementById("hot-network-questions");
 var hotOrig = hot.innerHTML;
 
