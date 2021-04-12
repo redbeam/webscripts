@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         StackExchange Productivity Booster
-// @version      3
+// @version      4
 // @description  Hides Top Questions on StackExchange sites.
 // @author       Matus
 // @match        *://*.stackexchange.com/*
