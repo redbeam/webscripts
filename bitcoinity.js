@@ -7,9 +7,10 @@
 // @grant        none
 // ==/UserScript==
 
-'use strict';
+"use strict";
 
 window.Markets.set_title = function() {
     return document.title = "Bitcoinity.org";
 }
 window.Markets.set_title();
+console.log("Started Bitcoinity.org Title Unspoiler");
