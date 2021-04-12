@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Bitcoinity.org Title Unspoiler
-// @version      3
+// @version      4
 // @description  Masks the Bitcoin price in the webpage title
 // @author       Matus
 // @match        http://bitcoinity.org/markets/*
