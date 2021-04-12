@@ -7,12 +7,9 @@
 // @grant        none
 // ==/UserScript==
 
-(function() {
-    'use strict';
+'use strict';
 
-    window.Markets.set_title = function() {
-        return document.title = "Bitcoinity.org";
-    }
-    window.Markets.set_title();
-
-})();
+window.Markets.set_title = function() {
+    return document.title = "Bitcoinity.org";
+}
+window.Markets.set_title();
