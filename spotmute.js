@@ -7,7 +7,7 @@
 // @grant        none
 // ==/UserScript==
 
-'use strict';
+"use strict";
 
 var adtexts = [
     "Spotify · Spotify",
