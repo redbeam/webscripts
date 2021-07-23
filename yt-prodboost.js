@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
-// @version      5
+// @version      6
 // @description  Hides suggested videos on YouTube's front page and video pages
-// @author       Matus
-// @match        *://www.youtube.com/*
+// @author       redbeam
+// @match        https://www.youtube.com/*
 // @grant        unsafeWindow
 // @run-at       document-start
 // ==/UserScript==
@@ -24,7 +24,7 @@ function hideHome() {
 }
 
 function hideRelated() {
-    if ( !document.location.pathname.includes("/watch")) {
+    if ( ! document.location.pathname.includes("/watch")) {
         return;
     }
 
@@ -38,6 +38,7 @@ function hideRelated() {
 
 unsafeWindow.addEventListener("DOMContentLoaded", function() {
     hideHome();
-    //hideRelated();
+    hideRelated();
 });
+
 console.log("Started YouTube Productivity Booster");
