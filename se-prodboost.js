@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         StackExchange Productivity Booster
-// @version      4
-// @description  Hides Top Questions on StackExchange sites.
-// @author       Matus
+// @version      5
+// @description  Hides Top Questions on StackExchange sites
+// @author       redbeam
 // @match        *://*.stackexchange.com/*
 // @match        *://stackoverflow.com/*
 // @match        *://*.stackoverflow.com/*
