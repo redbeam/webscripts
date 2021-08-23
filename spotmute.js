@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Spotify Ad Muter
-// @version      3
+// @version      4
 // @description  Mutes ads on Spotify
 // @author       redbeam
 // @match        https://open.spotify.com/*
@@ -12,7 +12,9 @@
 var adtexts = [
     "Spotify · Spotify",
     "Advertisement · Spotify",
-    "Advertisement ·"
+    "Advertisement ·",
+    "Spotify – Reklama",
+    "Reklama"
 ];
 
 var mutebutXpath = "/html/body/div[4]/div/div[2]/div[2]/footer/div/div[3]/div/div[3]/button";
