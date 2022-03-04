@@ -29,3 +29,6 @@ youtube.com##div#old-browser-alert
 is.muni.cz##div.prispevek.is_maly_tip
 ! toto je na stackexchange stranky, len oni maju dost vela domen, tak je to bez specifikacie
 ###overlay-header
+! reklamy na firmy na SO
+stackoverflow.com##.clc-cp-sb--tall
+stackoverflow.com##.clc-cp-link
