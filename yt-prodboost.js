@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         YouTube Productivity Booster
-// @version      6
+// @version      7
 // @description  Hides suggested videos on YouTube's front page and video pages
 // @author       redbeam
 // @match        https://www.youtube.com/*
@@ -18,9 +18,7 @@ function hideHome() {
     let home = document.getElementById("primary");
     home.style = "display: none";
 
-    document.getElementById("buttons").addEventListener("click", function() {
-        home.style = "";
-    });
+    document.getElementById("buttons").addEventListener("click", () => {home.style = ""});
 }
 
 function hideRelated() {
@@ -31,12 +29,10 @@ function hideRelated() {
     let panel = document.getElementById("related");
     panel.style = "display: none";
 
-    document.getElementById("buttons").addEventListener("click", function() {
-        panel.style = "";
-    });
+    document.getElementById("buttons").addEventListener("click", () => {panel.style = ""});
 }
 
-unsafeWindow.addEventListener("DOMContentLoaded", function() {
+unsafeWindow.addEventListener("yt-navigate-finish", function() {
     hideHome();
     hideRelated();
 });
